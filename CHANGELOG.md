@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# 0.1.1: Fix artifact naming
+
+### Bugfix
+* Fixed the artifact name for usage in other projects
+
 # 0.1.0: Project setup, first components for early adopters (13.09.2024) 
 
 ### Features
