@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "compose-playground"
+rootProject.name = "mds-compose"
 include(":compose-mds")
