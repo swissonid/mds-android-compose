@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "mds-compose"
-include(":compose-mds")
+include(":compose-mds", ":example")
