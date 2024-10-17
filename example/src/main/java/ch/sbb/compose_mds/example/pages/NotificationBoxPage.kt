@@ -10,6 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import ch.sbb.compose_mds.beta.ExperimentalSBBComponent
 import ch.sbb.compose_mds.beta.notificationBox.SBBNotificationBox
+import ch.sbb.compose_mds.sbbicons.SBBIcons
+import ch.sbb.compose_mds.sbbicons.Small
+import ch.sbb.compose_mds.sbbicons.small.ArrowCircleSmall
+import ch.sbb.compose_mds.sbbicons.small.ArrowsCircleSmall
 import ch.sbb.compose_mds.theme.SBBConst
 import ch.sbb.compose_mds.theme.defaultPadding
 
@@ -23,10 +27,10 @@ fun NotificationBoxPage() {
         modifier = Modifier.defaultPadding,
         verticalArrangement = Arrangement.spacedBy(SBBConst.DEFAULT_HORIZONTAL_PADDING)
     ) {
-        SBBNotificationBox.Alert("", text)
-        SBBNotificationBox.Warning("", text)
-        SBBNotificationBox.Success("", text)
-        SBBNotificationBox.Information("", text)
+        SBBNotificationBox.Alert(title = "Title", text = text, isCloseable = true)
+        SBBNotificationBox.Warning(text = text)
+        SBBNotificationBox.Success(title = "Title", text = text, interactionIcon = SBBIcons.Small.ArrowsCircleSmall)
+        SBBNotificationBox.Information(text = text, interactionIcon = SBBIcons.Small.ArrowsCircleSmall)
     }
 }
 
