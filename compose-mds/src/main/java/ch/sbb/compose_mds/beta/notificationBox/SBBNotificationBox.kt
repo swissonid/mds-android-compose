@@ -41,7 +41,7 @@ class NotificationBoxStyle(
     val icon: ImageVector,
     val iconColor: Color,
     val backgroundColor: Color,
-    val interactionIcon: ImageVector? = null,
+    val interactionIcon: ImageVector?,
 )
 
 typealias OnCloseCallback = () -> Unit
@@ -55,7 +55,7 @@ object SBBNotificationBox {
         text: String,
         isCloseable: Boolean = false,
         onClose: OnCloseCallback? = null,
-        interactionIcon: ImageVector? = null,
+        interactionIcon: ImageVector? = SBBIcons.Small.ChevronSmallRightSmall,
     ) {
         val style = NotificationBoxStyle(
             icon = SBBIcons.Small.CircleCrossSmall,
@@ -74,7 +74,7 @@ object SBBNotificationBox {
         text: String,
         isCloseable: Boolean = false,
         onClose: OnCloseCallback? = null,
-        interactionIcon: ImageVector? = null,
+        interactionIcon: ImageVector? = SBBIcons.Small.ChevronSmallRightSmall,
     ) {
         val style = NotificationBoxStyle(
             icon = SBBIcons.Small.CircleExclamationPointSmall,
@@ -93,7 +93,7 @@ object SBBNotificationBox {
         text: String,
         isCloseable: Boolean = false,
         onClose: OnCloseCallback? = null,
-        interactionIcon: ImageVector? = null,
+        interactionIcon: ImageVector? = SBBIcons.Small.ChevronSmallRightSmall,
     ) {
         val style = NotificationBoxStyle(
             icon = SBBIcons.Small.CircleTickSmall,
@@ -112,7 +112,7 @@ object SBBNotificationBox {
         text: String,
         isCloseable: Boolean = false,
         onClose: OnCloseCallback? = null,
-        interactionIcon: ImageVector? = null,
+        interactionIcon: ImageVector? = SBBIcons.Small.ChevronSmallRightSmall,
     ) {
         val style = NotificationBoxStyle(
             icon = SBBIcons.Small.CircleInformationSmall,
@@ -231,9 +231,10 @@ private fun RowScope.TextBody(text: String) {
 
 @Composable
 private fun InteractionIcon(modifier: Modifier, vector: ImageVector?) {
+    if (vector == null) return
     Icon(
         modifier = modifier.padding(end = 6.dp),
-        imageVector = vector ?: SBBIcons.Small.ChevronSmallRightSmall,
+        imageVector = vector,
         contentDescription = null,
     )
 }

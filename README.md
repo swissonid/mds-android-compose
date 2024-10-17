@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/SchweizerischeBundesbahnen/mds-android-compose.svg)](https://jitpack.io/#SchweizerischeBundesbahnen/mds-android-compose)
+
 #### Table Of Contents
 
 - [Introduction](#Introduction)
