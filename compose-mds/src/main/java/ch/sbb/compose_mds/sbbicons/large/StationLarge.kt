@@ -13,10 +13,10 @@ import ch.sbb.compose_mds.sbbicons.LargeGroup
 
 public val LargeGroup.StationLarge: ImageVector
     get() {
-        if (ch.sbb.compose_mds.sbbicons.large._stationLarge != null) {
-            return ch.sbb.compose_mds.sbbicons.large._stationLarge!!
+        if (_stationLarge != null) {
+            return _stationLarge!!
         }
-        ch.sbb.compose_mds.sbbicons.large._stationLarge = Builder(name = "StationLarge", defaultWidth = 48.0.dp, defaultHeight =
+        _stationLarge = Builder(name = "StationLarge", defaultWidth = 48.0.dp, defaultHeight =
                 48.0.dp, viewportWidth = 48.0f, viewportHeight = 48.0f).apply {
             path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
@@ -105,7 +105,7 @@ public val LargeGroup.StationLarge: ImageVector
             }
         }
         .build()
-        return ch.sbb.compose_mds.sbbicons.large._stationLarge!!
+        return _stationLarge!!
     }
 
 private var _stationLarge: ImageVector? = null

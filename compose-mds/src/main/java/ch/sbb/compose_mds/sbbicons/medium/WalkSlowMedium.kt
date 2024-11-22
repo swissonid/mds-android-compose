@@ -70,7 +70,7 @@ public val MediumGroup.WalkSlowMedium: ImageVector
                 moveTo(15.34f, 20.116f)
                 lineTo(14.124f, 23.126f)
                 lineTo(11.81f, 22.183f)
-                lineTo(11.345f, 21.993f)
+                lineTo(11.346f, 21.993f)
                 lineTo(11.158f, 22.458f)
                 lineTo(9.472f, 26.631f)
                 lineTo(9.285f, 27.093f)
@@ -82,7 +82,7 @@ public val MediumGroup.WalkSlowMedium: ImageVector
                 close()
                 moveTo(11.897f, 23.298f)
                 lineTo(13.749f, 24.053f)
-                lineTo(12.437f, 27.3f)
+                lineTo(12.438f, 27.3f)
                 lineTo(10.585f, 26.544f)
                 close()
                 moveTo(9.36f, 27.463f)
@@ -90,8 +90,8 @@ public val MediumGroup.WalkSlowMedium: ImageVector
                 arcToRelative(0.751f, 0.751f, 0.0f, false, false, 1.39f, 0.562f)
                 arcToRelative(0.75f, 0.75f, 0.0f, false, false, -0.694f, -1.03f)
                 moveToRelative(2.086f, 1.591f)
-                arcToRelative(0.75f, 0.75f, 0.0f, false, true, 0.976f, -0.414f)
-                arcToRelative(0.75f, 0.75f, 0.0f, true, true, -0.976f, 0.414f)
+                arcToRelative(0.75f, 0.75f, 0.0f, false, true, 0.977f, -0.414f)
+                arcToRelative(0.75f, 0.75f, 0.0f, true, true, -0.977f, 0.414f)
             }
         }
         .build()

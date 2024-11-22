@@ -40,7 +40,7 @@ public val SmallGroup.MergeSmall: ImageVector
                 curveToRelative(1.669f, -0.913f, 3.722f, -1.645f, 6.446f, -2.095f)
                 curveToRelative(-2.724f, -0.45f, -4.777f, -1.182f, -6.446f, -2.095f)
                 curveToRelative(-2.31f, -1.265f, -3.861f, -2.876f, -5.39f, -4.464f)
-                curveToRelative(-0.352f, -0.365f, -0.702f, -0.73f, -1.06f, -1.087f)
+                arcToRelative(80.0f, 80.0f, 0.0f, false, false, -1.06f, -1.087f)
                 lineToRelative(0.707f, -0.708f)
                 curveToRelative(0.382f, 0.383f, 0.749f, 0.763f, 1.11f, 1.138f)
                 curveToRelative(1.52f, 1.577f, 2.95f, 3.059f, 5.114f, 4.244f)

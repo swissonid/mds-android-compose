@@ -28,7 +28,7 @@ fun NotificationBoxPage() {
         verticalArrangement = Arrangement.spacedBy(SBBConst.DEFAULT_HORIZONTAL_PADDING)
     ) {
         SBBNotificationBox.Alert(title = "Title", text = text, isCloseable = true)
-        SBBNotificationBox.Warning(text = text)
+        SBBNotificationBox.Warning(text = text, interactionIcon = null)
         SBBNotificationBox.Success(title = "Title", text = text, interactionIcon = SBBIcons.Small.ArrowsCircleSmall)
         SBBNotificationBox.Information(text = text, interactionIcon = SBBIcons.Small.ArrowsCircleSmall)
     }

@@ -21,14 +21,14 @@ public val SmallGroup.ArrowStartRightSmall: ImageVector
             path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = EvenOdd) {
-                moveToRelative(13.854f, 8.146f)
+                moveToRelative(15.854f, 8.146f)
                 lineToRelative(3.99f, 3.992f)
                 lineToRelative(0.352f, 0.353f)
                 lineToRelative(-0.352f, 0.354f)
                 lineToRelative(-3.99f, 4.007f)
                 lineToRelative(-0.708f, -0.705f)
                 lineToRelative(3.141f, -3.156f)
-                horizontalLineTo(7.0f)
+                horizontalLineTo(9.0f)
                 verticalLineToRelative(-1.0f)
                 horizontalLineToRelative(9.283f)
                 lineToRelative(-3.137f, -3.138f)

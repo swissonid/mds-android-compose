@@ -38,6 +38,7 @@ import ch.sbb.compose_mds.sbbicons.large.BucketFoamBroomLarge
 import ch.sbb.compose_mds.sbbicons.large.BuildingTreeLarge
 import ch.sbb.compose_mds.sbbicons.large.BulbOffLarge
 import ch.sbb.compose_mds.sbbicons.large.BulbOnLarge
+import ch.sbb.compose_mds.sbbicons.large.BusTrainLarge
 import ch.sbb.compose_mds.sbbicons.large.CalculatorLarge
 import ch.sbb.compose_mds.sbbicons.large.CalendarLarge
 import ch.sbb.compose_mds.sbbicons.large.CalendarOneDayLarge
@@ -61,6 +62,7 @@ import ch.sbb.compose_mds.sbbicons.large.CircleCrossLarge
 import ch.sbb.compose_mds.sbbicons.large.CircleInformationLarge
 import ch.sbb.compose_mds.sbbicons.large.CirclePlayLarge
 import ch.sbb.compose_mds.sbbicons.large.CircleQuestionMarkLarge
+import ch.sbb.compose_mds.sbbicons.large.CircleTickLarge
 import ch.sbb.compose_mds.sbbicons.large.CircleTriangleSquareLarge
 import ch.sbb.compose_mds.sbbicons.large.CityLarge
 import ch.sbb.compose_mds.sbbicons.large.ClapperboardLarge
@@ -95,6 +97,7 @@ import ch.sbb.compose_mds.sbbicons.large.FaceSadLarge
 import ch.sbb.compose_mds.sbbicons.large.FaceSmilingLarge
 import ch.sbb.compose_mds.sbbicons.large.FaceTearLarge
 import ch.sbb.compose_mds.sbbicons.large.FaceThinkingLarge
+import ch.sbb.compose_mds.sbbicons.large.FaceThinkingSmilingLarge
 import ch.sbb.compose_mds.sbbicons.large.FactoryLarge
 import ch.sbb.compose_mds.sbbicons.large.FerrisWheelLarge
 import ch.sbb.compose_mds.sbbicons.large.FireplaceLarge
@@ -142,6 +145,7 @@ import ch.sbb.compose_mds.sbbicons.large.MagnifyingGlassLarge
 import ch.sbb.compose_mds.sbbicons.large.MagnifyingGlassMinusLarge
 import ch.sbb.compose_mds.sbbicons.large.MagnifyingGlassPlusLarge
 import ch.sbb.compose_mds.sbbicons.large.MarketShoppingBagLarge
+import ch.sbb.compose_mds.sbbicons.large.MedalLarge
 import ch.sbb.compose_mds.sbbicons.large.MoneyExchangeLarge
 import ch.sbb.compose_mds.sbbicons.large.MountainLakeSunLarge
 import ch.sbb.compose_mds.sbbicons.large.MountainRockTransmitterSignalLarge
@@ -167,6 +171,7 @@ import ch.sbb.compose_mds.sbbicons.large.QuestionAnswerLarge
 import ch.sbb.compose_mds.sbbicons.large.RailwayShipLarge
 import ch.sbb.compose_mds.sbbicons.large.RailwaySwitchLarge
 import ch.sbb.compose_mds.sbbicons.large.RocketLarge
+import ch.sbb.compose_mds.sbbicons.large.RunningShoeLarge
 import ch.sbb.compose_mds.sbbicons.large.SeatWindowLarge
 import ch.sbb.compose_mds.sbbicons.large.ShareLarge
 import ch.sbb.compose_mds.sbbicons.large.ShoppingCartLarge
@@ -250,49 +255,49 @@ public val LargeGroup.all: ____KtList<ImageVector>
         TravelBackpackLarge, EuropeFlagLarge, PizzaSliceLarge, HandFingersSnapLarge,
         SmartphoneDisabledLarge, TreeLarge, TrainTracksLarge, LocomotiveHighSpeedLarge, MuseumLarge,
         WagonCouplingDraggingEquipmentLarge, LipsHandLarge, ChartColumnTrendLarge,
-        GlassCocktailLarge, LocationPinSurroundingAreaLarge, NetworkLarge, TunnelLarge,
-        LockOpenLarge, BicycleRoofKeyLarge, UserTieLarge, BriefcaseLarge, PictureLarge,
+        FaceThinkingSmilingLarge, GlassCocktailLarge, LocationPinSurroundingAreaLarge, NetworkLarge,
+        TunnelLarge, LockOpenLarge, BicycleRoofKeyLarge, UserTieLarge, BriefcaseLarge, PictureLarge,
         HeartFilledLarge, BellLarge, FlameWarningLightLarge, BatteryLevelMediumLarge,
         QuestionAnswerLarge, PiggyBankLarge, ShareLarge, WifiDisabledLarge, CurriculumVitaeLarge,
         AerosolCanLarge, TrafficJamLarge, BatteryLevelHighLarge, WashingMachineLarge,
         WalkLargeLarge, FireplaceLarge, FreightWagonWeightLarge, BridgeLarge, FaceSmilingLarge,
         SeatWindowLarge, RailwayShipLarge, CarProfilePowerPlugLarge, TargetLarge, HouseLarge,
         LocationPinCameraLarge, StationLarge, MoneyExchangeLarge, FaceKingLarge, EnvelopeLarge,
-        WheelMicrophoneLarge, HourglassLarge, FaceDisagreeLarge, SkisSkiPolesLarge, AlarmClockLarge,
-        BulbOffLarge, LockClosedLarge, PercentLarge, TrashLarge, BalloonsLarge, ParkAndRailLarge,
-        WavesLadderLarge, FaceTearLarge, MagnifyingGlassPlusLarge, MagnifyingGlassMinusLarge,
-        ThreeAdultsLarge, SwitzerlandRouteLarge, MarketShoppingBagLarge, HikingBootLarge,
-        HandSafetyShieldLarge, EyeDisabledLarge, CarProfileSignParkingLarge, PaperAeroplaneLarge,
-        BuildingTreeLarge, ChildAdultLarge, EyeLarge, CirclePlayLarge, TabletLarge,
-        LucerneChapelBridgeLarge, FreightWagonLarge, PunctualityLarge, MusicRockHandGestureLarge,
-        AppleBagLarge, EmployeesSbbLarge, BrochureLarge, CalendarOneDayLarge, EiffelTowerLarge,
-        GpsDisabledLarge, MusicNotesLarge, HierarchyLarge, CoinDollarLarge, ClockLarge,
-        TrainProfileSignalLarge, TrainSkiLarge, DogLarge, AvatarTrainStaffLarge, PretzelLarge,
-        HandHeartLarge, BinocularsLarge, PenLarge, HandPlusCircleLarge, BicycleLarge,
-        LighthouseLarge, MagnifyingGlassLarge, AppIconLarge, ElephantLarge, ParagraphLarge,
-        CarPowerPlugLarge, BackpackLarge, SoccerBallLarge, SignParkingLarge, HeartLarge,
-        TaxiProfileLarge, MountainSunLarge, LotusLarge, GiftLarge, BellDisabledLarge,
-        LocomotiveProfileMoonLarge, UserGroupLarge, DiamondLarge, LaptopLarge, DisplayLarge,
-        TrainStationLarge, HandSbbLarge, BicycleRoofSurveillanceCameraLarge, BatteryLevelLowLarge,
-        WalletLarge, TwoSpeechBubblesLarge, CigaretteDisabledLarge, ClapperboardLarge,
-        TabletSmartphoneLarge, ChartLineLarge, TunnelFreightWagonShiftedLarge, NewspaperLarge,
-        LocationPinSurroundingAreaPowerPlugLarge, WalkLarge, BucketFoamBroomLarge,
+        WheelMicrophoneLarge, MedalLarge, HourglassLarge, FaceDisagreeLarge, SkisSkiPolesLarge,
+        AlarmClockLarge, BulbOffLarge, BusTrainLarge, LockClosedLarge, PercentLarge, TrashLarge,
+        BalloonsLarge, ParkAndRailLarge, WavesLadderLarge, FaceTearLarge, MagnifyingGlassPlusLarge,
+        MagnifyingGlassMinusLarge, ThreeAdultsLarge, SwitzerlandRouteLarge, MarketShoppingBagLarge,
+        HikingBootLarge, HandSafetyShieldLarge, EyeDisabledLarge, CarProfileSignParkingLarge,
+        PaperAeroplaneLarge, BuildingTreeLarge, ChildAdultLarge, EyeLarge, CirclePlayLarge,
+        TabletLarge, LucerneChapelBridgeLarge, FreightWagonLarge, PunctualityLarge,
+        MusicRockHandGestureLarge, AppleBagLarge, EmployeesSbbLarge, BrochureLarge,
+        CalendarOneDayLarge, EiffelTowerLarge, GpsDisabledLarge, MusicNotesLarge, HierarchyLarge,
+        CoinDollarLarge, ClockLarge, TrainProfileSignalLarge, TrainSkiLarge, DogLarge,
+        AvatarTrainStaffLarge, PretzelLarge, HandHeartLarge, BinocularsLarge, PenLarge,
+        HandPlusCircleLarge, BicycleLarge, LighthouseLarge, MagnifyingGlassLarge, AppIconLarge,
+        ElephantLarge, ParagraphLarge, CarPowerPlugLarge, BackpackLarge, SoccerBallLarge,
+        SignParkingLarge, HeartLarge, TaxiProfileLarge, MountainSunLarge, LotusLarge, GiftLarge,
+        BellDisabledLarge, LocomotiveProfileMoonLarge, UserGroupLarge, DiamondLarge, LaptopLarge,
+        DisplayLarge, TrainStationLarge, HandSbbLarge, BicycleRoofSurveillanceCameraLarge,
+        BatteryLevelLowLarge, WalletLarge, TwoSpeechBubblesLarge, CigaretteDisabledLarge,
+        ClapperboardLarge, TabletSmartphoneLarge, ChartLineLarge, TunnelFreightWagonShiftedLarge,
+        NewspaperLarge, LocationPinSurroundingAreaPowerPlugLarge, WalkLarge, BucketFoamBroomLarge,
         DisplaySwitzerlandWarningLightLarge, ArmchairLarge, MountainRockTransmitterSignalLarge,
-        BanknotesDollarLarge, DownloadLarge, PaperClipLarge, CutleryLarge, ChartColumnLarge,
-        BarrierConstructionLarge, AirplaneTrainLarge, UserHeadsetLarge, SpannerLarge, CalendarLarge,
-        FaceNeutralLarge, AvatarPoliceLarge, FaceSadLarge, AdultKidsLarge, CheckpointsLarge,
-        CloudLarge, CircleCrossLarge, TicketDayLarge, TrainSignalLarge, BulbOnLarge,
-        TicketsClassLarge, BatteryLevelEmptyLarge, FaceThinkingLarge,
+        BanknotesDollarLarge, DownloadLarge, CircleTickLarge, PaperClipLarge, CutleryLarge,
+        ChartColumnLarge, BarrierConstructionLarge, AirplaneTrainLarge, UserHeadsetLarge,
+        SpannerLarge, CalendarLarge, FaceNeutralLarge, AvatarPoliceLarge, FaceSadLarge,
+        AdultKidsLarge, CheckpointsLarge, CloudLarge, CircleCrossLarge, TicketDayLarge,
+        TrainSignalLarge, BulbOnLarge, TicketsClassLarge, BatteryLevelEmptyLarge, FaceThinkingLarge,
         CarProfileUserGroupCircleLarge, SurveillanceCamerasTrainLarge, CertificateRibbonLarge,
         ContactLineArrowTrainLarge, LocomotiveLarge, LocationPinMapLarge, SmartphoneLarge,
-        FerrisWheelLarge, WeightWheelLarge, TrainProfileLarge, PlatformLarge, EnvelopeOpenLarge,
-        GlobeLocomotiveLarge, SunshineLarge, CameraLarge, LaptopSmartphoneLarge, FaceGrinningLarge,
-        WheelchairInaccessibleLarge, BrowserLarge, SuitcaseDisabledLarge, UserHatLarge,
-        TwoFingerTapLarge, WifiLarge, TrainLarge, RailwaySwitchLarge, CalculatorLarge, GpsLarge,
-        SuitcaseLarge, RocketLarge, FullscreenLarge, CircleTriangleSquareLarge, CarProfileLarge,
-        CircleInformationLarge, CircleQuestionMarkLarge, CroissantLarge, ChartPieLarge,
-        SunshadeSunSandLarge, ChristmasTreeShoppingBagLarge, CigaretteLarge, ControlsLarge,
-        BluetoothLarge, CityLarge, WheelchairLarge, SwitzerlandLarge, LeafLarge,
+        RunningShoeLarge, FerrisWheelLarge, WeightWheelLarge, TrainProfileLarge, PlatformLarge,
+        EnvelopeOpenLarge, GlobeLocomotiveLarge, SunshineLarge, CameraLarge, LaptopSmartphoneLarge,
+        FaceGrinningLarge, WheelchairInaccessibleLarge, BrowserLarge, SuitcaseDisabledLarge,
+        UserHatLarge, TwoFingerTapLarge, WifiLarge, TrainLarge, RailwaySwitchLarge, CalculatorLarge,
+        GpsLarge, SuitcaseLarge, RocketLarge, FullscreenLarge, CircleTriangleSquareLarge,
+        CarProfileLarge, CircleInformationLarge, CircleQuestionMarkLarge, CroissantLarge,
+        ChartPieLarge, SunshadeSunSandLarge, ChristmasTreeShoppingBagLarge, CigaretteLarge,
+        ControlsLarge, BluetoothLarge, CityLarge, WheelchairLarge, SwitzerlandLarge, LeafLarge,
         MountainLakeSunLarge, ShoppingCartLarge, CoinsLarge, SwisspassLarge, HandshakeLarge,
         StreetLocationPinLarge)
     return __all!!

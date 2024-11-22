@@ -40,7 +40,7 @@ public val MediumGroup.ArrowsLeftRightMedium: ImageVector
                 lineTo(32.582f, 20.25f)
                 lineTo(32.229f, 20.604f)
                 lineTo(26.979f, 25.854f)
-                lineTo(26.271f, 25.147f)
+                lineTo(26.272f, 25.147f)
                 lineTo(30.669f, 20.75f)
                 lineTo(13.5f, 20.748f)
                 verticalLineToRelative(-1.0f)

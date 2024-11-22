@@ -24,6 +24,7 @@ import ch.sbb.compose_mds.sbbicons.small.ArrowCircleTwoUsersSmall
 import ch.sbb.compose_mds.sbbicons.small.ArrowCompassFilledSmall
 import ch.sbb.compose_mds.sbbicons.small.ArrowCompassSmall
 import ch.sbb.compose_mds.sbbicons.small.ArrowDownSmall
+import ch.sbb.compose_mds.sbbicons.small.ArrowEndRightSmall
 import ch.sbb.compose_mds.sbbicons.small.ArrowLeftSmall
 import ch.sbb.compose_mds.sbbicons.small.ArrowLongDownSmall
 import ch.sbb.compose_mds.sbbicons.small.ArrowLongLeftSmall
@@ -91,6 +92,7 @@ import ch.sbb.compose_mds.sbbicons.small.BusSbbSmall
 import ch.sbb.compose_mds.sbbicons.small.BusSmall
 import ch.sbb.compose_mds.sbbicons.small.BusStopSmall
 import ch.sbb.compose_mds.sbbicons.small.BusSurroundingAreaSmall
+import ch.sbb.compose_mds.sbbicons.small.BusTrainSmall
 import ch.sbb.compose_mds.sbbicons.small.ButterflySmall
 import ch.sbb.compose_mds.sbbicons.small.ButtonPowerSmall
 import ch.sbb.compose_mds.sbbicons.small.CableCarProfileSmall
@@ -211,6 +213,7 @@ import ch.sbb.compose_mds.sbbicons.small.ControlsXSmall
 import ch.sbb.compose_mds.sbbicons.small.CopySmall
 import ch.sbb.compose_mds.sbbicons.small.CroissantSmall
 import ch.sbb.compose_mds.sbbicons.small.CrossSmall
+import ch.sbb.compose_mds.sbbicons.small.CrossTinySmall
 import ch.sbb.compose_mds.sbbicons.small.CupHotSmall
 import ch.sbb.compose_mds.sbbicons.small.CurriculumVitaeSmall
 import ch.sbb.compose_mds.sbbicons.small.CustomerAssistanceSbbSmall
@@ -272,6 +275,7 @@ import ch.sbb.compose_mds.sbbicons.small.FaceSadSmall
 import ch.sbb.compose_mds.sbbicons.small.FaceSmilingSmall
 import ch.sbb.compose_mds.sbbicons.small.FaceTearSmall
 import ch.sbb.compose_mds.sbbicons.small.FaceThinkingSmall
+import ch.sbb.compose_mds.sbbicons.small.FaceThinkingSmilingSmall
 import ch.sbb.compose_mds.sbbicons.small.FaceWorkerSmall
 import ch.sbb.compose_mds.sbbicons.small.FactorySmall
 import ch.sbb.compose_mds.sbbicons.small.FastForwardSmall
@@ -337,6 +341,7 @@ import ch.sbb.compose_mds.sbbicons.small.HeartFilledSmall
 import ch.sbb.compose_mds.sbbicons.small.HeartSmall
 import ch.sbb.compose_mds.sbbicons.small.HierarchySmall
 import ch.sbb.compose_mds.sbbicons.small.HighlighterSmall
+import ch.sbb.compose_mds.sbbicons.small.HikingBootSmall
 import ch.sbb.compose_mds.sbbicons.small.HomePowerPlugSmall
 import ch.sbb.compose_mds.sbbicons.small.HostelSmall
 import ch.sbb.compose_mds.sbbicons.small.HourglassSmall
@@ -344,6 +349,7 @@ import ch.sbb.compose_mds.sbbicons.small.HouseSmall
 import ch.sbb.compose_mds.sbbicons.small.IdCardEmployeeSmall
 import ch.sbb.compose_mds.sbbicons.small.IncreaseSizeSmall
 import ch.sbb.compose_mds.sbbicons.small.InfinityLoopSmall
+import ch.sbb.compose_mds.sbbicons.small.JerseyShirtSmall
 import ch.sbb.compose_mds.sbbicons.small.KRSmall
 import ch.sbb.compose_mds.sbbicons.small.KeySmall
 import ch.sbb.compose_mds.sbbicons.small.KeyboardSmall
@@ -379,6 +385,7 @@ import ch.sbb.compose_mds.sbbicons.small.MachineLearningSmall
 import ch.sbb.compose_mds.sbbicons.small.MagnifyingGlassMinusSmall
 import ch.sbb.compose_mds.sbbicons.small.MagnifyingGlassPlusSmall
 import ch.sbb.compose_mds.sbbicons.small.MagnifyingGlassSmall
+import ch.sbb.compose_mds.sbbicons.small.MedalSmall
 import ch.sbb.compose_mds.sbbicons.small.MedicalFacilitySmall
 import ch.sbb.compose_mds.sbbicons.small.MeetingPointSmall
 import ch.sbb.compose_mds.sbbicons.small.MegaphoneSmall
@@ -455,6 +462,8 @@ import ch.sbb.compose_mds.sbbicons.small.RoofBedSmall
 import ch.sbb.compose_mds.sbbicons.small.RouteCircleEndSmall
 import ch.sbb.compose_mds.sbbicons.small.RouteCircleStartSmall
 import ch.sbb.compose_mds.sbbicons.small.RssSmall
+import ch.sbb.compose_mds.sbbicons.small.RunSmall
+import ch.sbb.compose_mds.sbbicons.small.RunningShoeSmall
 import ch.sbb.compose_mds.sbbicons.small.ScannerSmall
 import ch.sbb.compose_mds.sbbicons.small.ScooterProfilePowerPlugSmall
 import ch.sbb.compose_mds.sbbicons.small.ScooterProfileSmall
@@ -535,6 +544,7 @@ import ch.sbb.compose_mds.sbbicons.small.TicketRouteSmall
 import ch.sbb.compose_mds.sbbicons.small.TicketRvSmall
 import ch.sbb.compose_mds.sbbicons.small.TicketStarSmall
 import ch.sbb.compose_mds.sbbicons.small.TicketsClassSmall
+import ch.sbb.compose_mds.sbbicons.small.TimetableArrowsCircleSmall
 import ch.sbb.compose_mds.sbbicons.small.TimetableSmall
 import ch.sbb.compose_mds.sbbicons.small.ToiletSmall
 import ch.sbb.compose_mds.sbbicons.small.TorchSmall
@@ -639,15 +649,16 @@ public val SmallGroup.all: ____KtList<ImageVector>
         ArrowTurnDownSmall, BatteryLevelHighSmall, CircleDottedPartSmall, StairsUserSmall,
         AerosolCanSmall, ArrowsLeftRightDownUpSmall, HeartFilledSmall, TicketPercentSmall,
         CircleThreeDotsSmall, BoatProfileSmall, CircleDottedPartXSmall, PictureSmall,
-        ArrowCircleSmall, FlameWarningLightSmall, QuestionAnswerSmall, ArrowsLongRightLeftSmall,
-        PiggyBankSmall, BatteryLevelMediumSmall, BellSmall, SeatAisleReservationSmall,
-        LocationPinSurroundingAreaSmall, TunnelSmall, UserTieSmall, ArrowCircleResetSmall,
-        BicycleRoofKeySmall, LockOpenSmall, BriefcaseSmall, BookSectionMarkSmall, NetworkSmall,
-        UserKeySmall, FiveCirclesInterconnectedSmall, ChevronSmallUpSmall, LocomotiveHighSpeedSmall,
-        MuseumSmall, BikeProfileSignParkingSmall, CloudStrongRainSunSmall, DocumentDocSmall,
-        FreightWagonGlobeSmall, TrainTracksSmall, ChevronSmallLeftRightSmall, TreeSmall,
-        GondolaProfileSmall, TicketMachineTicketSmall, ArrowCircleTimeSmall, GeneralDisplaySmall,
-        GlassCocktailSmall, FolderOpenArrowSmall, MegaphoneSmall, SpeakerSmall, DocumentVideoSmall,
+        CrossTinySmall, ArrowCircleSmall, FlameWarningLightSmall, QuestionAnswerSmall,
+        ArrowsLongRightLeftSmall, PiggyBankSmall, BatteryLevelMediumSmall, BellSmall,
+        SeatAisleReservationSmall, LocationPinSurroundingAreaSmall, TunnelSmall, UserTieSmall,
+        ArrowCircleResetSmall, BicycleRoofKeySmall, LockOpenSmall, BriefcaseSmall,
+        BookSectionMarkSmall, NetworkSmall, UserKeySmall, FiveCirclesInterconnectedSmall,
+        ChevronSmallUpSmall, LocomotiveHighSpeedSmall, MuseumSmall, BikeProfileSignParkingSmall,
+        CloudStrongRainSunSmall, DocumentDocSmall, FreightWagonGlobeSmall, TrainTracksSmall,
+        ChevronSmallLeftRightSmall, TreeSmall, GondolaProfileSmall, TicketMachineTicketSmall,
+        ArrowCircleTimeSmall, GeneralDisplaySmall, GlassCocktailSmall, FolderOpenArrowSmall,
+        FaceThinkingSmilingSmall, MegaphoneSmall, SpeakerSmall, DocumentVideoSmall,
         WagonCouplingDraggingEquipmentSmall, LipsHandSmall, ChartColumnTrendSmall,
         TwoSpeechBubblesRainbowSmall, NextSmall, FactorySmall, DocumentTextSmall,
         BluetoothDisabledSmall, HalfFareCardSmall, TicketRvSmall, ArchiveBoxSmall,
@@ -677,33 +688,35 @@ public val SmallGroup.all: ____KtList<ImageVector>
         BrochureSmall, TicketFvSmall, CloudLightningSmall, TimetableSmall, MinusSmall,
         DeskAdjustableSmall, ArrowLeftSmall, HandSmall, HammerWrenchSmall, CloudIceSmall,
         AppleBagSmall, FolderInfoSmall, HandWithServiceBellSmall, HandSafetyShieldSmall,
-        CarProfileSignParkingSmall, ControlsXSmall, EyeDisabledSmall, ClipboardPlusSmall,
-        GearsSmall, ClipboardCrossSmall, TabletSmall, WheelchairUncertainSmall, CloudParticlesSmall,
-        PaperAeroplaneSmall, QrcodeDisabledSmall, SignXSmall, BuildingTreeSmall,
-        CargoBikeTrailerSmall, CirclePlaySmall, DocumentXlsSmall, EyeSmall, ChildAdultSmall,
-        FaceTearSmall, MagnifyingGlassPlusSmall, WavesLadderSmall, TranslateSmall, ChevronLeftSmall,
-        FigmaSmall, DocumentZipSmall, ArrowCircleTrainTracksSmall, HandCursorSmall,
-        BikeProfilePowerPlugSmall, MedicalFacilitySmall, FolderOpenSmall, ArrowRightSmall,
-        ArrowDownSmall, ThumbDownSmall, SwitzerlandRouteSmall, PlusSmall, MagnifyingGlassMinusSmall,
-        CloudSnowLightningSmall, MountainMinusSmall, DoubleChevronSmallLeftSmall, ChevronRightSmall,
-        ArrowCompassFilledSmall, ChevronSmallEndRightSmall, EarthSmall, ArrowStartRightSmall,
-        TrashSmall, ArrowCircleLightningSmall, EntranceSmall, ParkAndRailSmall, FaceWorkerSmall,
-        ScannerSmall, BalloonsSmall, CloudDropsSmall, PercentSmall, HandMotionSmall,
-        BusSurroundingAreaSmall, AngularSmall, LocationPinASmall, StarSmall, AlarmClockSmall,
-        CombinedMobilitySmall, ServiceBellSmall, PetrolStationSmall, UserGroupRowSmall,
-        LockClosedSmall, CertificateRibbonTickSmall, ChevronUpSmall, ArrowLongDownSmall,
-        BulbOffSmall, RailwaySwitchAppSmall, CoinStackSmall, HourglassSmall, ArrowsRightLeftSmall,
-        MetadataSmall, CloudSnowSmall, BikeTrailerSmall, ToiletSmall, CloudSunSmall,
-        WheelchairSubstituteTransportSmall, LockerSmall, SkisSkiPolesSmall, PlaySmall,
-        ChevronSmallRightSmall, FaceDisagreeSmall, FlashlightOnSmall, CircleDottedSmall,
-        FaceSadSmall, DocumentImageSmall, AvatarPoliceSmall, DoorSmall, FogSmall,
-        WeatherUnknownSmall, SpeechBubbleExclamationPointSmall, ArrowsCircleSmall, WeightSmall,
-        ChartColumnSmall, HandBriefcaseSmall, SunMoonSmall, CutlerySmall, MachineLearningSmall,
-        BatteryLightningSmall, CircleTickSmall, CloudLightningMoonSmall, MoonSmall, PaperClipSmall,
-        FaceNeutralSmall, CloudSnowSunSmall, AirplaneTrainSmall, UserHeadsetSmall,
-        BarrierConstructionSmall, CloudRainSmall, SpannerSmall, HandUserSmall, CalendarSmall,
-        ClipboardEmptySmall, ClipboardUsersSmall, BucketFoamBroomSmall, WalkSmall, HostelSmall,
-        MicroscooterProfileSmall, StrollerSmall, ScooterProfilePowerPlugSmall, NarcoticSmall,
+        CarProfileSignParkingSmall, ControlsXSmall, EyeDisabledSmall, HikingBootSmall,
+        ClipboardPlusSmall, GearsSmall, ClipboardCrossSmall, TabletSmall, WheelchairUncertainSmall,
+        CloudParticlesSmall, PaperAeroplaneSmall, QrcodeDisabledSmall, SignXSmall,
+        BuildingTreeSmall, CargoBikeTrailerSmall, CirclePlaySmall, DocumentXlsSmall, EyeSmall,
+        ChildAdultSmall, FaceTearSmall, MagnifyingGlassPlusSmall, WavesLadderSmall, TranslateSmall,
+        ChevronLeftSmall, FigmaSmall, DocumentZipSmall, ArrowCircleTrainTracksSmall,
+        HandCursorSmall, BikeProfilePowerPlugSmall, MedicalFacilitySmall, FolderOpenSmall,
+        ArrowRightSmall, ArrowDownSmall, ThumbDownSmall, SwitzerlandRouteSmall, PlusSmall,
+        MagnifyingGlassMinusSmall, CloudSnowLightningSmall, MountainMinusSmall,
+        DoubleChevronSmallLeftSmall, ChevronRightSmall, ArrowCompassFilledSmall,
+        ChevronSmallEndRightSmall, EarthSmall, ArrowStartRightSmall, TrashSmall,
+        ArrowCircleLightningSmall, EntranceSmall, ParkAndRailSmall, FaceWorkerSmall, ScannerSmall,
+        BalloonsSmall, CloudDropsSmall, PercentSmall, HandMotionSmall, BusSurroundingAreaSmall,
+        AngularSmall, LocationPinASmall, StarSmall, AlarmClockSmall, CombinedMobilitySmall,
+        ServiceBellSmall, PetrolStationSmall, UserGroupRowSmall, LockClosedSmall,
+        CertificateRibbonTickSmall, ChevronUpSmall, ArrowLongDownSmall, BulbOffSmall, BusTrainSmall,
+        RailwaySwitchAppSmall, RunSmall, MedalSmall, CoinStackSmall, TimetableArrowsCircleSmall,
+        HourglassSmall, ArrowsRightLeftSmall, MetadataSmall, CloudSnowSmall, BikeTrailerSmall,
+        ToiletSmall, CloudSunSmall, WheelchairSubstituteTransportSmall, LockerSmall,
+        SkisSkiPolesSmall, PlaySmall, ChevronSmallRightSmall, FaceDisagreeSmall, FlashlightOnSmall,
+        CircleDottedSmall, FaceSadSmall, DocumentImageSmall, AvatarPoliceSmall, JerseyShirtSmall,
+        DoorSmall, FogSmall, WeatherUnknownSmall, SpeechBubbleExclamationPointSmall,
+        ArrowsCircleSmall, WeightSmall, ChartColumnSmall, HandBriefcaseSmall, SunMoonSmall,
+        CutlerySmall, MachineLearningSmall, BatteryLightningSmall, CircleTickSmall,
+        CloudLightningMoonSmall, MoonSmall, PaperClipSmall, FaceNeutralSmall, CloudSnowSunSmall,
+        AirplaneTrainSmall, UserHeadsetSmall, BarrierConstructionSmall, CloudRainSmall,
+        ArrowEndRightSmall, SpannerSmall, HandUserSmall, CalendarSmall, ClipboardEmptySmall,
+        ClipboardUsersSmall, BucketFoamBroomSmall, WalkSmall, HostelSmall, MicroscooterProfileSmall,
+        StrollerSmall, ScooterProfilePowerPlugSmall, NarcoticSmall,
         MountainRockTransmitterSignalSmall, DocumentPlusSmall, MinimizeScreenSmall,
         FreightWagonSwitzerlandSmall, DatabaseSmall, ContainerSmall, DownloadSmall,
         BanknotesDollarSmall, DisplaySwitzerlandWarningLightSmall, ClipboardTickSmall,
@@ -749,20 +762,21 @@ public val SmallGroup.all: ____KtList<ImageVector>
         RoofBedSmall, LaptopSmartphoneSmall, SmartphoneShakingSmall, BrowserSmall, ArrowTurnUpSmall,
         VeganSmall, TicketJourneySmall, CargoBikeSmall, WineCheeseSmall, ArrowChangeSmall,
         WheelchairInaccessibleSmall, TagSmall, CloudRainSnowMoonSmall, WeightWheelSmall,
-        MovingBusSmall, KeyboardSmall, DocumentSignatureSmall, CircleInformationSmallSmall,
-        ChevronSmallLeftSmall, TicketMoonStarSmall, PulseSmall, UserChangeSmall,
-        ArrowsLongUpDownSmall, RampUserSmall, SunshineSmall, CameraSmall, ContextMenuSmall,
-        EnvelopeOpenSmall, GlobeLocomotiveSmall, ChevronSmallDownFlatSmall, TrainProfileSmall,
-        UmbrellaGloveQuestionMarkSmall, PauseSmall, ShoppingBagFastSmall, CloudRainSnowSmall,
-        PlatformSmall, FourDiamondsSmall, TwoUsersSmall, UserHeadsetDisplaySmall, DeskSmall,
-        SunriseSmall, BookSmall, CarProfileUserGroupCircleSmall, DocumentStandardSmall,
-        ThermometerSmall, LocationPinMapSmall, LocomotiveSmall, FastForwardSmall,
-        UserGroupRoundTableSmall, PinSmall, SmartphoneSmall, SurveillanceCamerasTrainSmall,
-        CertificateRibbonSmall, ArrowsUpDownSmall, FormSmall, ContactLineArrowTrainSmall,
-        CloudSnowMoonSmall, SmartwatchSmall, CircleCrossSmall, TicketDaySmall, TrainSignalSmall,
-        CheckpointsSmall, CloudSmall, TicketRouteSmall, ChevronSmallDownCircleSmall,
-        FaceThinkingSmall, FlashlightOffSmall, DocumentSoundSmall, ExitSmall, TelephoneGsmSmall,
-        UndergroundVehiculeProfileSmall, TicketsClassSmall, TicketStarSmall, QuestionMarkSmall,
-        ChevronSmallEndLeftSmall, BulbOnSmall, LiftSmall, BatteryLevelEmptySmall)
+        MovingBusSmall, KeyboardSmall, DocumentSignatureSmall, RunningShoeSmall,
+        CircleInformationSmallSmall, ChevronSmallLeftSmall, TicketMoonStarSmall, PulseSmall,
+        UserChangeSmall, ArrowsLongUpDownSmall, RampUserSmall, SunshineSmall, CameraSmall,
+        ContextMenuSmall, EnvelopeOpenSmall, GlobeLocomotiveSmall, ChevronSmallDownFlatSmall,
+        TrainProfileSmall, UmbrellaGloveQuestionMarkSmall, PauseSmall, ShoppingBagFastSmall,
+        CloudRainSnowSmall, PlatformSmall, FourDiamondsSmall, TwoUsersSmall,
+        UserHeadsetDisplaySmall, DeskSmall, SunriseSmall, BookSmall, CarProfileUserGroupCircleSmall,
+        DocumentStandardSmall, ThermometerSmall, LocationPinMapSmall, LocomotiveSmall,
+        FastForwardSmall, UserGroupRoundTableSmall, PinSmall, SmartphoneSmall,
+        SurveillanceCamerasTrainSmall, CertificateRibbonSmall, ArrowsUpDownSmall, FormSmall,
+        ContactLineArrowTrainSmall, CloudSnowMoonSmall, SmartwatchSmall, CircleCrossSmall,
+        TicketDaySmall, TrainSignalSmall, CheckpointsSmall, CloudSmall, TicketRouteSmall,
+        ChevronSmallDownCircleSmall, FaceThinkingSmall, FlashlightOffSmall, DocumentSoundSmall,
+        ExitSmall, TelephoneGsmSmall, UndergroundVehiculeProfileSmall, TicketsClassSmall,
+        TicketStarSmall, QuestionMarkSmall, ChevronSmallEndLeftSmall, BulbOnSmall, LiftSmall,
+        BatteryLevelEmptySmall)
     return __all!!
   }

@@ -35,7 +35,7 @@ public val MediumGroup.MergeMedium: ImageVector
                     lineToRelative(4.974f, -4.973f)
                     curveToRelative(-8.978f, 0.123f, -14.419f, 1.612f, -18.289f, 3.731f)
                     curveToRelative(-3.283f, 1.798f, -5.456f, 4.052f, -7.74f, 6.421f)
-                    curveToRelative(-0.54f, 0.56f, -1.085f, 1.126f, -1.652f, 1.694f)
+                    curveToRelative(-0.539f, 0.56f, -1.085f, 1.126f, -1.652f, 1.694f)
                     lineToRelative(-0.708f, -0.707f)
                     curveToRelative(0.544f, -0.544f, 1.073f, -1.094f, 1.603f, -1.644f)
                     curveToRelative(2.292f, -2.38f, 4.588f, -4.763f, 8.017f, -6.64f)
@@ -44,7 +44,7 @@ public val MediumGroup.MergeMedium: ImageVector
                     curveTo(8.837f, 12.01f, 6.541f, 9.626f, 4.25f, 7.247f)
                     curveToRelative(-0.53f, -0.55f, -1.06f, -1.1f, -1.603f, -1.643f)
                     lineToRelative(0.708f, -0.708f)
-                    arcTo(128.0f, 128.0f, 0.0f, false, true, 5.006f, 6.59f)
+                    curveToRelative(0.567f, 0.568f, 1.113f, 1.134f, 1.652f, 1.694f)
                     curveToRelative(2.284f, 2.369f, 4.457f, 4.623f, 7.74f, 6.42f)
                 }
             }

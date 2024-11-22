@@ -23,10 +23,10 @@ public val MediumGroup.UndergroundVehiculeProfileMedium: ImageVector
                     strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
                     pathFillType = EvenOdd) {
                 moveTo(3.015f, 4.765f)
-                horizontalLineToRelative(20.628f)
+                horizontalLineToRelative(20.629f)
                 arcToRelative(2.0f, 2.0f, 0.0f, false, true, 1.9f, 1.42f)
                 lineToRelative(4.08f, 13.5f)
-                lineToRelative(0.004f, 0.01f)
+                lineToRelative(0.003f, 0.01f)
                 curveToRelative(0.09f, 0.321f, 0.136f, 0.653f, 0.138f, 0.986f)
                 verticalLineToRelative(7.069f)
                 arcToRelative(2.0f, 2.0f, 0.0f, false, true, -2.0f, 2.0f)

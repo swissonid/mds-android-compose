@@ -24,6 +24,7 @@ import ch.sbb.compose_mds.sbbicons.medium.ArrowCircleTwoUsersMedium
 import ch.sbb.compose_mds.sbbicons.medium.ArrowCompassFilledMedium
 import ch.sbb.compose_mds.sbbicons.medium.ArrowCompassMedium
 import ch.sbb.compose_mds.sbbicons.medium.ArrowDownMedium
+import ch.sbb.compose_mds.sbbicons.medium.ArrowEndRightMedium
 import ch.sbb.compose_mds.sbbicons.medium.ArrowLeftMedium
 import ch.sbb.compose_mds.sbbicons.medium.ArrowLongDownMedium
 import ch.sbb.compose_mds.sbbicons.medium.ArrowLongLeftMedium
@@ -90,6 +91,7 @@ import ch.sbb.compose_mds.sbbicons.medium.BusProfileMedium
 import ch.sbb.compose_mds.sbbicons.medium.BusSbbMedium
 import ch.sbb.compose_mds.sbbicons.medium.BusStopMedium
 import ch.sbb.compose_mds.sbbicons.medium.BusSurroundingAreaMedium
+import ch.sbb.compose_mds.sbbicons.medium.BusTrainMedium
 import ch.sbb.compose_mds.sbbicons.medium.ButterflyMedium
 import ch.sbb.compose_mds.sbbicons.medium.ButtonPowerMedium
 import ch.sbb.compose_mds.sbbicons.medium.CableCarProfileMedium
@@ -210,6 +212,7 @@ import ch.sbb.compose_mds.sbbicons.medium.ControlsXMedium
 import ch.sbb.compose_mds.sbbicons.medium.CopyMedium
 import ch.sbb.compose_mds.sbbicons.medium.CroissantMedium
 import ch.sbb.compose_mds.sbbicons.medium.CrossMedium
+import ch.sbb.compose_mds.sbbicons.medium.CrossTinyMedium
 import ch.sbb.compose_mds.sbbicons.medium.CupHotMedium
 import ch.sbb.compose_mds.sbbicons.medium.CurriculumVitaeMedium
 import ch.sbb.compose_mds.sbbicons.medium.CustomerAssistanceSbbMedium
@@ -271,6 +274,7 @@ import ch.sbb.compose_mds.sbbicons.medium.FaceSadMedium
 import ch.sbb.compose_mds.sbbicons.medium.FaceSmilingMedium
 import ch.sbb.compose_mds.sbbicons.medium.FaceTearMedium
 import ch.sbb.compose_mds.sbbicons.medium.FaceThinkingMedium
+import ch.sbb.compose_mds.sbbicons.medium.FaceThinkingSmilingMedium
 import ch.sbb.compose_mds.sbbicons.medium.FaceWorkerMedium
 import ch.sbb.compose_mds.sbbicons.medium.FactoryMedium
 import ch.sbb.compose_mds.sbbicons.medium.FastForwardMedium
@@ -336,6 +340,7 @@ import ch.sbb.compose_mds.sbbicons.medium.HeartFilledMedium
 import ch.sbb.compose_mds.sbbicons.medium.HeartMedium
 import ch.sbb.compose_mds.sbbicons.medium.HierarchyMedium
 import ch.sbb.compose_mds.sbbicons.medium.HighlighterMedium
+import ch.sbb.compose_mds.sbbicons.medium.HikingBootMedium
 import ch.sbb.compose_mds.sbbicons.medium.HomePowerPlugMedium
 import ch.sbb.compose_mds.sbbicons.medium.HostelMedium
 import ch.sbb.compose_mds.sbbicons.medium.HourglassMedium
@@ -343,6 +348,7 @@ import ch.sbb.compose_mds.sbbicons.medium.HouseMedium
 import ch.sbb.compose_mds.sbbicons.medium.IdCardEmployeeMedium
 import ch.sbb.compose_mds.sbbicons.medium.IncreaseSizeMedium
 import ch.sbb.compose_mds.sbbicons.medium.InfinityLoopMedium
+import ch.sbb.compose_mds.sbbicons.medium.JerseyShirtMedium
 import ch.sbb.compose_mds.sbbicons.medium.KRMedium
 import ch.sbb.compose_mds.sbbicons.medium.KeyMedium
 import ch.sbb.compose_mds.sbbicons.medium.KeyboardMedium
@@ -378,6 +384,7 @@ import ch.sbb.compose_mds.sbbicons.medium.MachineLearningMedium
 import ch.sbb.compose_mds.sbbicons.medium.MagnifyingGlassMedium
 import ch.sbb.compose_mds.sbbicons.medium.MagnifyingGlassMinusMedium
 import ch.sbb.compose_mds.sbbicons.medium.MagnifyingGlassPlusMedium
+import ch.sbb.compose_mds.sbbicons.medium.MedalMedium
 import ch.sbb.compose_mds.sbbicons.medium.MedicalFacilityMedium
 import ch.sbb.compose_mds.sbbicons.medium.MeetingPointMedium
 import ch.sbb.compose_mds.sbbicons.medium.MegaphoneMedium
@@ -454,6 +461,8 @@ import ch.sbb.compose_mds.sbbicons.medium.RoofBedMedium
 import ch.sbb.compose_mds.sbbicons.medium.RouteCircleEndMedium
 import ch.sbb.compose_mds.sbbicons.medium.RouteCircleStartMedium
 import ch.sbb.compose_mds.sbbicons.medium.RssMedium
+import ch.sbb.compose_mds.sbbicons.medium.RunMedium
+import ch.sbb.compose_mds.sbbicons.medium.RunningShoeMedium
 import ch.sbb.compose_mds.sbbicons.medium.ScannerMedium
 import ch.sbb.compose_mds.sbbicons.medium.ScooterProfileMedium
 import ch.sbb.compose_mds.sbbicons.medium.ScooterProfilePowerPlugMedium
@@ -534,6 +543,7 @@ import ch.sbb.compose_mds.sbbicons.medium.TicketRouteMedium
 import ch.sbb.compose_mds.sbbicons.medium.TicketRvMedium
 import ch.sbb.compose_mds.sbbicons.medium.TicketStarMedium
 import ch.sbb.compose_mds.sbbicons.medium.TicketsClassMedium
+import ch.sbb.compose_mds.sbbicons.medium.TimetableArrowsCircleMedium
 import ch.sbb.compose_mds.sbbicons.medium.TimetableMedium
 import ch.sbb.compose_mds.sbbicons.medium.ToiletMedium
 import ch.sbb.compose_mds.sbbicons.medium.TorchMedium
@@ -624,7 +634,7 @@ public val MediumGroup.all: ____KtList<ImageVector>
     }
     __all= listOf(CloudCo2ArrowDownMedium, MergeMedium, LayersWithArrowsMedium, MuseumMedium,
         UmbrellaGloveQuestionMarkMedium, LockerMedium, MountainSunMedium, MoonMedium,
-        MeetingPointMedium, VeganMedium, TicketMachineTicketMedium, TrainSignalMedium,
+        MeetingPointMedium, RunMedium, VeganMedium, TicketMachineTicketMedium, TrainSignalMedium,
         AirplaneMedium, MicroscooterProfilePowerPlugMedium, CloudSunMedium,
         DoubleChevronSmallLeftMedium, ArrowCircleSwitzerlandMedium, HeartFilledMedium,
         CloudRainSnowMedium, ChevronSmallEndRightMedium, ShuttleMedium, LaptopSmartphoneMedium,
@@ -663,7 +673,7 @@ public val MediumGroup.all: ____KtList<ImageVector>
         FolderPlusMedium, DiamondMedium, TunnelFreightWagonShiftedMedium, CoinDollarMedium,
         ArrowCircleTwoUsersMedium, ThermometerMedium, WheelchairInaccessibleMedium,
         UserHeadsetMedium, ClipboardTickMedium, TramMedium, BinocularsMedium, DeskAdjustableMedium,
-        LiftMedium, CarProfileUserGroupCircleMedium, LinkMedium, FingerprintMedium,
+        CrossTinyMedium, LiftMedium, CarProfileUserGroupCircleMedium, LinkMedium, FingerprintMedium,
         BuildingTreeMedium, FolderOpenMedium, ArrowCompassMedium, RoofBedMedium,
         CloudRainSnowSunMedium, GlassCocktailMedium, FilterMedium, BatteryLevelLowMedium,
         AppIconMedium, ArrowsLeftRightMedium, CableCarProfileMedium,
@@ -680,18 +690,18 @@ public val MediumGroup.all: ____KtList<ImageVector>
         GlobeArrowsLeftRightUpDownMedium, HandClockMedium, BluetoothMedium, ArrowsUpDownMedium,
         SwisspassMedium, TargetMedium, FaceSadMedium, SeatWindowReservationMedium,
         ServiceBellMedium, EiffelTowerMedium, FreightWagonContainerWindMedium,
-        MountainLakeSunMedium, ChevronSmallDownMedium, EyeMedium, WeightMedium, BookmarkMedium,
-        SkisSkiPolesMedium, FunicularProfileMedium, BottleAppleMedium, GunMedium,
-        ComputerChipMedium, EyeDisabledMedium, FastForwardMedium, ClipboardPlusMedium,
-        CoinStackMedium, FlameWarningLightMedium, ArchiveBoxMedium, OfficeChairMedium,
-        CarPowerPlugMedium, PlatformMedium, UnicornMedium, BucketFoamBroomMedium,
-        BulbOnPercentageMedium, BicycleRoofSurveillanceCameraMedium, BusMedium, NewspaperSbbMedium,
-        ClipboardCrossMedium, CircleEmptyMedium, CarProfileMedium, FaceTearMedium,
-        CloudSnowflakeMedium, BalloonsMedium, ParkAndRailMedium, DeskMedium, ChevronDownMedium,
-        AerosolCanMedium, HandSafetyShieldMedium, DocumentImageMedium, CarProfileSignParkingMedium,
-        FreightWagonGlobeMedium, TravelBackpackMedium, GearsMedium, PaperClipMedium,
-        BicycleRoofKeyMedium, BusSurroundingAreaMedium, CloudSnowLightningMedium, HostelMedium,
-        TagMedium, NextMedium, CloudRainSnowMoonMedium, CircleDottedMedium,
+        MountainLakeSunMedium, ChevronSmallDownMedium, EyeMedium, WeightMedium,
+        TimetableArrowsCircleMedium, BookmarkMedium, SkisSkiPolesMedium, FunicularProfileMedium,
+        BottleAppleMedium, GunMedium, ComputerChipMedium, EyeDisabledMedium, FastForwardMedium,
+        ClipboardPlusMedium, CoinStackMedium, FlameWarningLightMedium, ArchiveBoxMedium,
+        OfficeChairMedium, CarPowerPlugMedium, PlatformMedium, UnicornMedium, MedalMedium,
+        BucketFoamBroomMedium, BulbOnPercentageMedium, BicycleRoofSurveillanceCameraMedium,
+        BusMedium, NewspaperSbbMedium, ClipboardCrossMedium, CircleEmptyMedium, CarProfileMedium,
+        FaceTearMedium, CloudSnowflakeMedium, BalloonsMedium, ParkAndRailMedium, DeskMedium,
+        ChevronDownMedium, AerosolCanMedium, HandSafetyShieldMedium, DocumentImageMedium,
+        CarProfileSignParkingMedium, FreightWagonGlobeMedium, TravelBackpackMedium, GearsMedium,
+        PaperClipMedium, BicycleRoofKeyMedium, BusSurroundingAreaMedium, CloudSnowLightningMedium,
+        HostelMedium, TagMedium, NextMedium, CloudRainSnowMoonMedium, CircleDottedMedium,
         LocomotiveHighSpeedMedium, GondolaProfileMedium, SignExclamationPointMedium,
         TelephoneReceiverMedium, WalkMedium, BluetoothDisabledMedium, TwoFingerTapMedium,
         TorchMedium, TicketDayMedium, SwisspassTemporaryMedium, FigmaMedium, CirclePlayMedium,
@@ -709,12 +719,12 @@ public val MediumGroup.all: ____KtList<ImageVector>
         CircleDottedPartMedium, CirclePenMedium, WheelMicrophoneMedium, ChevronSmallRightMedium,
         MinimizeScreenMedium, CloudRainSunMedium, CashRegisterMedium, BatteryLevelPercentageMedium,
         QrcodeTwoTicketsMedium, TramProfileMedium, ArrowCircleResetMedium, CargoBikeMedium,
-        PinMedium, UserKeyMedium, ArrowCircleTrainTracksMedium, ThumbDownMedium, FaceGrinningMedium,
-        CigaretteDisabledMedium, PetrolStationMedium, WeightWheelMedium,
-        CircleSignalNoiseRatioMedium, CloudSnowflakeSunMedium, ScannerMedium, MountainPlusMedium,
-        DocumentPlusMedium, CombinedMobilityMedium, MagnifyingGlassPlusMedium, BulbOnMedium,
-        ThumbUpMedium, PictureMedium, TunnelMedium, DatabaseMedium, UserHelmetMedium,
-        HandHeartMedium, CloudDenseFogMedium, SmartwatchMedium, ShirtShoeMedium,
+        PinMedium, UserKeyMedium, ArrowEndRightMedium, ArrowCircleTrainTracksMedium,
+        ThumbDownMedium, FaceGrinningMedium, CigaretteDisabledMedium, PetrolStationMedium,
+        WeightWheelMedium, CircleSignalNoiseRatioMedium, CloudSnowflakeSunMedium, ScannerMedium,
+        MountainPlusMedium, DocumentPlusMedium, CombinedMobilityMedium, MagnifyingGlassPlusMedium,
+        BulbOnMedium, ThumbUpMedium, PictureMedium, TunnelMedium, DatabaseMedium, UserHelmetMedium,
+        HandHeartMedium, CloudDenseFogMedium, JerseyShirtMedium, SmartwatchMedium, ShirtShoeMedium,
         HandWithServiceBellMedium, ArrowLongDownMedium, WavesLadderMedium, SwitzerlandRouteMedium,
         PlatformDisplayMedium, BookMedium, ClipboardEmptyMedium, CircleCrossMedium, UserMedium,
         CloudDropsMedium, FactoryMedium, TicketJourneyMedium, CloudLightningMedium, CloudMedium,
@@ -733,13 +743,14 @@ public val MediumGroup.all: ____KtList<ImageVector>
         HouseMedium, TwoUsersMedium, WifiMedium, FaceKingMedium, ArrowCircleEyeMedium,
         HandGraduationCapMedium, QuestionAnswerMedium, AngularMedium, ClipboardUsersMedium,
         FreightWagonWeightMedium, WheelchairUncertainMedium, ClapperboardMedium,
-        RailwaySwitchAppMedium, SpannerMedium, ControlsXMedium, CloudSunshineMedium,
-        EscalatorMedium, CirclePlusMedium, CloudVocMedium, BanknotesDollarMedium, TabletMedium,
-        TrainTracksPenMedium, VegetarianMedium, ArrowTurnDownMedium, TicketParkingMedium,
-        DocumentLockMedium, HandBriefcaseMedium, BicycleProfileUserGroupCircleMedium, MinusMedium,
-        DisplaySwitzerlandWarningLightMedium, NetworkMedium, DocumentSbbMedium,
-        ChevronSmallLeftMedium, CalculatorMedium, TrashMedium, LowVisionMedium, LotusMedium,
-        ArrowLongUpMedium, FaceThinkingMedium, DoorArrowRightLeftMedium, SignXMedium,
+        RailwaySwitchAppMedium, RunningShoeMedium, SpannerMedium, ControlsXMedium,
+        CloudSunshineMedium, EscalatorMedium, CirclePlusMedium, CloudVocMedium,
+        BanknotesDollarMedium, TabletMedium, TrainTracksPenMedium, VegetarianMedium,
+        ArrowTurnDownMedium, TicketParkingMedium, DocumentLockMedium, HandBriefcaseMedium,
+        BicycleProfileUserGroupCircleMedium, MinusMedium, DisplaySwitzerlandWarningLightMedium,
+        NetworkMedium, FaceThinkingSmilingMedium, DocumentSbbMedium, ChevronSmallLeftMedium,
+        CalculatorMedium, TrashMedium, LowVisionMedium, LotusMedium, ArrowLongUpMedium,
+        BusTrainMedium, FaceThinkingMedium, DoorArrowRightLeftMedium, SignXMedium,
         ArrowChangeHorizontalMedium, WheelchairPartiallyMedium, LocationPinSurroundingAreaMedium,
         NarcoticMedium, BellMedium, CloudFogMedium, HalfFareCardMedium, BarrierConstructionMedium,
         ArrowLeftMedium, FaceDisagreeMedium, ThreeGearsMedium, LighthouseMedium, WagonMedium,
@@ -747,29 +758,29 @@ public val MediumGroup.all: ____KtList<ImageVector>
         ChevronLeftMedium, DocumentSignatureMedium, WheelchairMedium, LocationPinCameraMedium,
         BatteryLevelMediumMedium, MetadataMedium, WaitingRoomMedium, ShoppingBagCouponMedium,
         ArrowStartLeftMedium, IdCardEmployeeMedium, LaptopMedium, CloudParticlesMedium,
-        ButterflyMedium, CroissantMedium, ArrowsLongRightLeftMedium, BikeProfileSignParkingMedium,
-        KeyboardMedium, ArrowRightMedium, AirplaneTrainMedium, ConstructionMedium,
-        TelephoneGsmMedium, TaxiMedium, DisplayBinaryCodeMedium, MoneyExchangeMedium,
-        CircleInformationSmallMedium, DragMedium, GiftMedium, TicketDisabledMedium, SunriseMedium,
-        UserTieMedium, CupHotMedium, CrossMedium, KeyMedium, PercentTagMedium,
-        DoubleDeckWagonMedium, HomePowerPlugMedium, ScreenInsideTrainMedium, SeatWindowMedium,
-        IncreaseSizeMedium, LocomotiveProfileMoonMedium, ChevronSmallUpCircleMedium,
-        WalkieTalkieMedium, BikeProfilePowerPlugMedium, SpeechBubbleGroupEmptyMedium,
-        MountainRockTransmitterSignalMedium, PaperAeroplaneMedium, LockOpenMedium, BackpackMedium,
-        DownloadSmallDataMedium, TreeMedium, ChevronSmallDownCircleMedium, ClockMedium,
-        PercentMedium, ShoppingBagFastMedium, TicketRvMedium, ScooterProfilePowerPlugMedium,
-        TicketHeartMedium, ShareMedium, BatteryLightningMedium, TabletSmartphoneMedium,
-        UserGroupRowMedium, ClipboardListMedium, CircleThreeDotsMedium, CircleTickMedium,
-        SpeakerMedium, ArrowCircleMedium, WalkFastMedium, LinkExternalMedium,
-        HandLocomotiveProfileMedium, FolderMedium, TaxiProfileMedium, PunctualityMedium,
-        TwoFoldersMedium, CloudSnowMedium, DriverlessBusProfileMedium, TicketStarMedium,
-        ParagraphMedium, StarMedium, CopyMedium, CircleLeafPowerPlugMedium, WeatherUnknownMedium,
-        AppleBagMedium, HourglassMedium, ChargingStationMedium, StrollerMedium,
-        UndergroundVehiculeProfileMedium, StationMedium, CloudStrongRainSunMedium, HandshakeMedium,
-        GlobeMedium, CarProfilePowerPlugMedium, MagnifyingGlassMedium, CloudDropsMoonMedium,
-        FourSquaresMedium, DoorbellHandMedium, RailwaySwitchMedium, BusStopMedium,
-        MountainMinusMedium, ExitMedium, ChevronRightMedium, FullscreenMedium, FogMedium,
-        CircleInformationMedium, UploadMedium, BusProfileMedium, HandCursorMedium,
+        ButterflyMedium, CroissantMedium, HikingBootMedium, ArrowsLongRightLeftMedium,
+        BikeProfileSignParkingMedium, KeyboardMedium, ArrowRightMedium, AirplaneTrainMedium,
+        ConstructionMedium, TelephoneGsmMedium, TaxiMedium, DisplayBinaryCodeMedium,
+        MoneyExchangeMedium, CircleInformationSmallMedium, DragMedium, GiftMedium,
+        TicketDisabledMedium, SunriseMedium, UserTieMedium, CupHotMedium, CrossMedium, KeyMedium,
+        PercentTagMedium, DoubleDeckWagonMedium, HomePowerPlugMedium, ScreenInsideTrainMedium,
+        SeatWindowMedium, IncreaseSizeMedium, LocomotiveProfileMoonMedium,
+        ChevronSmallUpCircleMedium, WalkieTalkieMedium, BikeProfilePowerPlugMedium,
+        SpeechBubbleGroupEmptyMedium, MountainRockTransmitterSignalMedium, PaperAeroplaneMedium,
+        LockOpenMedium, BackpackMedium, DownloadSmallDataMedium, TreeMedium,
+        ChevronSmallDownCircleMedium, ClockMedium, PercentMedium, ShoppingBagFastMedium,
+        TicketRvMedium, ScooterProfilePowerPlugMedium, TicketHeartMedium, ShareMedium,
+        BatteryLightningMedium, TabletSmartphoneMedium, UserGroupRowMedium, ClipboardListMedium,
+        CircleThreeDotsMedium, CircleTickMedium, SpeakerMedium, ArrowCircleMedium, WalkFastMedium,
+        LinkExternalMedium, HandLocomotiveProfileMedium, FolderMedium, TaxiProfileMedium,
+        PunctualityMedium, TwoFoldersMedium, CloudSnowMedium, DriverlessBusProfileMedium,
+        TicketStarMedium, ParagraphMedium, StarMedium, CopyMedium, CircleLeafPowerPlugMedium,
+        WeatherUnknownMedium, AppleBagMedium, HourglassMedium, ChargingStationMedium,
+        StrollerMedium, UndergroundVehiculeProfileMedium, StationMedium, CloudStrongRainSunMedium,
+        HandshakeMedium, GlobeMedium, CarProfilePowerPlugMedium, MagnifyingGlassMedium,
+        CloudDropsMoonMedium, FourSquaresMedium, DoorbellHandMedium, RailwaySwitchMedium,
+        BusStopMedium, MountainMinusMedium, ExitMedium, ChevronRightMedium, FullscreenMedium,
+        FogMedium, CircleInformationMedium, UploadMedium, BusProfileMedium, HandCursorMedium,
         RackRailawayProfileMedium, EuropeFlagMedium, CloudCo2Medium, RampUserMedium,
         DownloadLargeDataMedium)
     return __all!!
