@@ -11,15 +11,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import ch.sbb.compose_mds.R
 import ch.sbb.compose_mds.composables.header.SBBHeader
 import ch.sbb.compose_mds.composables.header.Small
 import ch.sbb.compose_mds.example.pages.ButtonPage
@@ -34,6 +29,7 @@ import ch.sbb.compose_mds.example.pages.SegmentedButtonPage
 import ch.sbb.compose_mds.example.pages.SliderPage
 import ch.sbb.compose_mds.example.pages.StatusPage
 import ch.sbb.compose_mds.example.pages.SwitchPage
+import ch.sbb.compose_mds.example.pages.TabBarPage
 import ch.sbb.compose_mds.example.pages.TextFieldPage
 import ch.sbb.compose_mds.example.pages.TypographyPage
 
@@ -70,6 +66,7 @@ class MainActivity : ComponentActivity() {
                             composable("status") { StatusPage() }
                             composable("slider") { SliderPage() }
                             composable("notification-box") { NotificationBoxPage() }
+                            composable("tab-bar") { TabBarPage() }
                         }
                     }
                 }
