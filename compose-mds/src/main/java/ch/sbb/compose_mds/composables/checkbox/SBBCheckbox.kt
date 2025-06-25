@@ -20,6 +20,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.semantics.hideFromAccessibility
 import androidx.compose.ui.semantics.invisibleToUser
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.state.ToggleableState
@@ -86,7 +87,7 @@ fun SBBCheckbox(
         if (icon != null) {
             Icon(
                 modifier = Modifier
-                    .semantics { invisibleToUser() to true }
+                    .semantics { hideFromAccessibility() }
                     .padding(end = SBBCheckboxConst.CHECKBOX_PADDING),
                 imageVector = icon,
                 contentDescription = null,
