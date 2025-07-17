@@ -13,7 +13,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
@@ -43,9 +46,10 @@ fun SBBTabBar(
     modifier: Modifier = Modifier,
     controller: SBBTabBarController,
 ) {
+    var width by remember { mutableFloatStateOf(0f) }
     val configuration = LocalConfiguration.current
     val portrait = configuration.orientation == Configuration.ORIENTATION_PORTRAIT
-    val textPosition by controller.animatedTextPosition()
+    val textPosition by controller.animatedTextPosition(width)
     val animationSpec = controller.animationSpec()
     val peekCoroutine = rememberCoroutineScope()
     val pathColor = MaterialTheme.colorScheme.surfaceVariant
@@ -54,6 +58,7 @@ fun SBBTabBar(
         modifier = Modifier
             .drawBehind {
                 drawIntoCanvas { canvas ->
+                    width = size.width
                     val path by controller.path(size)
                     val shadowPaint = Paint().asFrameworkPaint().apply {
                         isAntiAlias = true
@@ -75,7 +80,7 @@ fun SBBTabBar(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(top = if (portrait) 8.dp else 2.dp)
+                .padding(top = if (portrait) 6.dp else 2.dp)
                 .selectableGroup()
                 .semantics {
                     collectionInfo = CollectionInfo(

@@ -20,11 +20,13 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.center
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.round
+import ch.sbb.compose_mds.theme.SBBConst
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
@@ -136,16 +138,17 @@ class SBBTabBarController internal constructor(
     }
 
     @Composable
-    internal fun animatedTextPosition(): State<IntOffset> {
+    internal fun animatedTextPosition(width: Float): State<IntOffset> {
         val selected by selected
         val position = positions[selected].topCenter.round()
-        val pos = min(
-            max(
-                position.x - textSize.value.center.x,
-                positions.first().left.roundToInt(),
-            ),
-            positions.last().right.roundToInt() - textSize.value.width,
-        )
+        val padding = with (LocalDensity.current) { SBBConst.DEFAULT_PADDING.roundToPx() }
+        val pos = when (LocalInspectionMode.current) {
+            true -> textSize.value.center.x
+            false -> min(
+                max(position.x - textSize.value.center.x, padding),
+                width.roundToInt() - textSize.value.width - padding,
+            )
+        }
         val offset = IntOffset(pos, 0)
         return animateIntOffsetAsState(
             targetValue = offset,
@@ -197,6 +200,6 @@ fun rememberSBBTabBarController(items: List<SBBTabBarItemData>): State<SBBTabBar
     val configuration = LocalConfiguration.current
     val portrait = configuration.orientation == Configuration.ORIENTATION_PORTRAIT
     val waveRadius =
-        with(LocalDensity.current) { if (portrait) (22.dp + 8.dp).toPx() else (18.dp + 3.dp).toPx() }
+        with(LocalDensity.current) { if (portrait) (22.dp + 6.dp).toPx() else (18.dp + 2.dp).toPx() }
     return remember { mutableStateOf(SBBTabBarController(items, waveRadius)) }
 }

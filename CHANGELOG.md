@@ -2,10 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# Unreleased
+# 0.1.4
 
 ### Features
 * Added SBBLoadingIndicator
+* Added SBBTabBar
+* Updated SBBSwitch style
 
 # 0.1.3: Update Icons
 
@@ -22,7 +24,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bugfix
 * Fixed the artifact name for usage in other projects
 
-# 0.1.0: Project setup, first components for early adopters (13.09.2024) 
+# 0.1.0: Project setup, first components for early adopters (13.09.2024)
 
 ### Features
 * **[SBB Theme][theme-class]** Initializing an App with all the SBB Styles and the SBB Color scheme. **Please note: The fonts are not included!**

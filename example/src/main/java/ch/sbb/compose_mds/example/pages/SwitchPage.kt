@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import ch.sbb.compose_mds.beta.ExperimentalSBBComponent
 import ch.sbb.compose_mds.beta.container.SBBGroup
+import ch.sbb.compose_mds.beta.switch.SBBSwitch
 
 @OptIn(ExperimentalSBBComponent::class)
 @Composable
@@ -24,10 +25,10 @@ fun SwitchPage() {
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             var checkedState: Boolean by remember { mutableStateOf(true) }
-            Switch(checked = checkedState, onCheckedChange = { checked -> checkedState = checked })
+            SBBSwitch(checked = checkedState, onCheckedChange = { checked -> checkedState = checked })
 
-            Switch(checked = true, enabled = false, onCheckedChange = {  })
-            Switch(checked = false, enabled = false, onCheckedChange = {  })
+            SBBSwitch(checked = true, enabled = false, onCheckedChange = {  })
+            SBBSwitch(checked = false, enabled = false, onCheckedChange = {  })
         }
     }
 }
