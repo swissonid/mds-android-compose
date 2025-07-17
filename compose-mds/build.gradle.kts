@@ -41,7 +41,7 @@ android {
             register<MavenPublication>("release") {
                 groupId = "ch.sbb.compose_mds"
                 artifactId = "compose-mds"
-                version = "0.1.4-pre"
+                version = "0.1.4"
 
                 afterEvaluate {
                     from(components["release"])
