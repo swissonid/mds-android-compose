@@ -69,6 +69,53 @@ SBBTheme(fontFamily = fontFamily) {
 
 <a id="License"></a>
 
+## Golden File Screenshot Testing
+
+This project uses [Roborazzi](https://github.com/takahirom/roborazzi) for screenshot testing to 
+prevent unintended visual regressions. The tests generate "golden file" images from the `@Preview` 
+composables located in the `example` module and compare them against previously recorded versions.
+
+All golden files are stored in the `/goldenfiles` directory at the root of the project.
+
+### Verifying and Updating Golden Files
+
+**To verify** that your changes have not caused any visual regressions, run the verification task. 
+This will compare newly generated screenshots with the existing golden files.
+```bash
+./gradlew :example:verifyRoborazziDebug
+```
+
+**To update** the golden files after making an intentional UI change, you must record the new 
+versions. This will overwrite the existing files with the latest output.
+```bash
+./gradlew :example:recordRoborazziDebug
+```
+
+### Workflow for UI Changes
+
+#### Adding a New Component
+1.  Create the new component in the `compose-mds` library.
+2.  In the `example` module, add a new file with one or more `@Preview` functions to showcase the component's different states.
+3.  Generate the initial golden file by running the record task:
+    ```bash
+    ./gradlew :example:recordRoborazziDebug
+    ```
+4.  A new image file will be created in the `/goldenfiles` directory. Review it to ensure it matches the component's design.
+5.  Commit the new component, the preview file, and the generated golden file.
+
+#### Modifying an Existing Component
+1.  Make your intended UI changes to a component in the `compose-mds` library.
+2.  Run the verification task. The test for the component you changed should fail.
+    ```bash
+    ./gradlew :example:verifyRoborazziDebug
+    ```
+    > **Note:** If the test does *not* fail, your change is likely not covered by the existing `@Preview`. You may need to adjust the preview to properly display the modification.
+3.  After confirming the test failure is expected, record the updated golden file:
+    ```bash
+    ./gradlew :example:recordRoborazziDebug
+    ```
+4.  Review the modified image in the `/goldenfiles` directory to ensure it correctly reflects your changes.
+5.  Commit your code changes along with the updated golden file.
 
 ## License
 
