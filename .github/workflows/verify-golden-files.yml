@@ -9,7 +9,7 @@ on:
 jobs:
   verify:
     name: Verify Golden File Screenshots
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout Repository
