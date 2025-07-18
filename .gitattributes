@@ -1,0 +1,15 @@
+goldenfiles/ch.sbb.compose_mds.example.pages.TextFieldPageKt.TextFieldPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.ButtonPageKt.ButtonPagePreview.NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.HeaderPageKt.HeaderPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.LoadingIndicatorPageKt.LoadingIndicatorPagePreview.NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.SegmentedButtonPageKt.SegmentedButtonPagePreview.NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.StatusPageKt.StatusPagePreview.NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.TextFieldPageKt.TextFieldPagePreview.NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.ButtonPageKt.ButtonPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.CheckboxPageKt.CheckboxPage.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.HeaderPageKt.HeaderPagePreview.WITH_BACKGROUND_NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.LoadingIndicatorPageKt.LoadingIndicatorPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.MainPageKt.MainPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.MainPageKt.MainPagePreview.WITH_BACKGROUND_NIGHT.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.StatusPageKt.StatusPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
+goldenfiles/ch.sbb.compose_mds.example.pages.SegmentedButtonPageKt.SegmentedButtonPagePreview.WITH_BACKGROUND.png filter=lfs diff=lfs merge=lfs -text
