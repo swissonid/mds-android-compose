@@ -23,6 +23,17 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Cache Gradle Packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          # Create a new cache when the versions file or build scripts change
+          key: ${{ runner.os }}-gradle-${{ hashFiles('gradle/libs.versions.toml', '**/*.gradle.kts') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
