@@ -1,9 +1,14 @@
+@file:OptIn(ExperimentalRoborazziApi::class)
+
+import com.github.takahirom.roborazzi.ExperimentalRoborazziApi
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.mavenPublish)
+    alias(libs.plugins.roborazzi)
 }
 
 android {
@@ -44,6 +49,23 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+            all {
+                it.systemProperties["robolectric.pixelCopyRenderMode"] = "hardware"
+            }
+        }
+    }
+}
+
+roborazzi {
+    generateComposePreviewRobolectricTests {
+        enable = true
+        packages = listOf("ch.sbb.compose_mds.example.pages",)
+    }
+    outputDir.set(file("../goldenfiles"))
 }
 
 dependencies {
@@ -57,6 +79,14 @@ dependencies {
     implementation(project(":compose-mds"))
     implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
+
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.ui.test.android)
+    testImplementation(libs.androidx.ui.test.junit4.android)
+    testImplementation(libs.androidx.ui.test.manifest)
+    testImplementation(libs.roborazzi.previewScannerSupport)
+    testImplementation(libs.composablePreviewScanner)
+
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ui.test.junit4)
