@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import ch.sbb.compose_mds.beta.ExperimentalSBBComponent
 import ch.sbb.compose_mds.beta.container.SBBGroup
 import ch.sbb.compose_mds.beta.list.SBBListHeader
-import ch.sbb.compose_mds.theme.SBBColors
+import ch.sbb.compose_mds.theme.PrimitiveColors
 import ch.sbb.compose_mds.theme.SBBConst
 
 @OptIn(ExperimentalSBBComponent::class)
@@ -37,85 +37,90 @@ fun ColorPage() {
         contentPadding = PaddingValues(SBBConst.HALF_PADDING),
     ) {
         item(span = { GridItemSpan(maxLineSpan) }) { SBBListHeader(text = "Colors") }
-        item { ColorEntry(name = "red", color = SBBColors.red) }
-        item { ColorEntry(name = "red125", color = SBBColors.red125) }
-        item { ColorEntry(name = "red150", color = SBBColors.red150) }
-        item { ColorEntry(name = "redDarkMode", color = SBBColors.redDarkMode) }
-        item { ColorEntry(name = "white", color = SBBColors.white) }
-        item { ColorEntry(name = "milk", color = SBBColors.milk) }
-        item { ColorEntry(name = "cloud", color = SBBColors.cloud) }
-        item { ColorEntry(name = "silver", color = SBBColors.silver) }
-        item { ColorEntry(name = "aluminum", color = SBBColors.aluminum) }
-        item { ColorEntry(name = "platinum", color = SBBColors.platinum) }
-        item { ColorEntry(name = "cement", color = SBBColors.cement) }
-        item { ColorEntry(name = "graphite", color = SBBColors.graphite) }
-        item { ColorEntry(name = "storm", color = SBBColors.storm) }
-        item { ColorEntry(name = "smoke", color = SBBColors.smoke) }
-        item { ColorEntry(name = "metal", color = SBBColors.metal) }
-        item { ColorEntry(name = "granite", color = SBBColors.granite) }
-        item { ColorEntry(name = "anthracite", color = SBBColors.anthracite) }
-        item { ColorEntry(name = "iron", color = SBBColors.iron) }
-        item { ColorEntry(name = "charcoal", color = SBBColors.charcoal) }
-        item { ColorEntry(name = "midnight", color = SBBColors.midnight) }
-        item { ColorEntry(name = "black", color = SBBColors.black) }
-        item { ColorEntry(name = "blue", color = SBBColors.blue) }
-        item { ColorEntry(name = "transparent", color = SBBColors.transparent) }
+        item { ColorEntry(name = "red", color = PrimitiveColors.red) }
+        item { ColorEntry(name = "red125", color = PrimitiveColors.red125) }
+        item { ColorEntry(name = "red150", color = PrimitiveColors.red150) }
+        item { ColorEntry(name = "redDarkMode", color = PrimitiveColors.redDarkMode) }
+        item { ColorEntry(name = "white", color = PrimitiveColors.white) }
+        item { ColorEntry(name = "milk", color = PrimitiveColors.milk) }
+        item { ColorEntry(name = "cloud", color = PrimitiveColors.cloud) }
+        item { ColorEntry(name = "silver", color = PrimitiveColors.silver) }
+        item { ColorEntry(name = "aluminum", color = PrimitiveColors.aluminum) }
+        item { ColorEntry(name = "platinum", color = PrimitiveColors.platinum) }
+        item { ColorEntry(name = "cement", color = PrimitiveColors.cement) }
+        item { ColorEntry(name = "graphite", color = PrimitiveColors.graphite) }
+        item { ColorEntry(name = "storm", color = PrimitiveColors.storm) }
+        item { ColorEntry(name = "smoke", color = PrimitiveColors.smoke) }
+        item { ColorEntry(name = "metal", color = PrimitiveColors.metal) }
+        item { ColorEntry(name = "granite", color = PrimitiveColors.granite) }
+        item { ColorEntry(name = "anthracite", color = PrimitiveColors.anthracite) }
+        item { ColorEntry(name = "iron", color = PrimitiveColors.iron) }
+        item { ColorEntry(name = "charcoal", color = PrimitiveColors.charcoal) }
+        item { ColorEntry(name = "midnight", color = PrimitiveColors.midnight) }
+        item { ColorEntry(name = "black", color = PrimitiveColors.black) }
+        item { ColorEntry(name = "blue", color = PrimitiveColors.blue) }
+        item { ColorEntry(name = "transparent", color = PrimitiveColors.transparent) }
 
         item(span = { GridItemSpan(maxLineSpan) }) { SBBListHeader(text = "Functional colors") }
-        item { ColorEntry(name = "sky", color = SBBColors.sky) }
-        item { ColorEntry(name = "night", color = SBBColors.night) }
-        item { ColorEntry(name = "violet", color = SBBColors.violet) }
-        item { ColorEntry(name = "pink", color = SBBColors.pink) }
-        item { ColorEntry(name = "autumn", color = SBBColors.autumn) }
-        item { ColorEntry(name = "orange", color = SBBColors.orange) }
-        item { ColorEntry(name = "peach", color = SBBColors.peach) }
-        item { ColorEntry(name = "lemon", color = SBBColors.lemon) }
-        item { ColorEntry(name = "brown", color = SBBColors.brown) }
-        item { ColorEntry(name = "green", color = SBBColors.green) }
-        item { ColorEntry(name = "turquoise", color = SBBColors.turquoise) }
+        item { ColorEntry(name = "sky", color = PrimitiveColors.sky) }
+        item { ColorEntry(name = "night", color = PrimitiveColors.night) }
+        item { ColorEntry(name = "violet", color = PrimitiveColors.violet) }
+        item { ColorEntry(name = "pink", color = PrimitiveColors.pink) }
+        item { ColorEntry(name = "autumn", color = PrimitiveColors.autumn) }
+        item { ColorEntry(name = "orange", color = PrimitiveColors.orange) }
+        item { ColorEntry(name = "peach", color = PrimitiveColors.peach) }
+        item { ColorEntry(name = "lemon", color = PrimitiveColors.lemon) }
+        item { ColorEntry(name = "brown", color = PrimitiveColors.brown) }
+        item { ColorEntry(name = "green", color = PrimitiveColors.green) }
+        item { ColorEntry(name = "turquoise", color = PrimitiveColors.turquoise) }
 
         item(span = { GridItemSpan(maxLineSpan) }) { SBBListHeader(text = "Off brand colors") }
-        item { ColorEntry(name = "royal", color = SBBColors.royal) }
-        item { ColorEntry(name = "royal125", color = SBBColors.royal125) }
-        item { ColorEntry(name = "royal150", color = SBBColors.royal150) }
+        item { ColorEntry(name = "royal", color = PrimitiveColors.royal) }
+        item { ColorEntry(name = "royal125", color = PrimitiveColors.royal125) }
+        item { ColorEntry(name = "royal150", color = PrimitiveColors.royal150) }
     }
 }
 
 @OptIn(ExperimentalStdlibApi::class, ExperimentalSBBComponent::class)
 @Composable
-private fun ColorEntry(name: String, color: Color) {
+private fun ColorEntry(
+    name: String,
+    color: Color,
+) {
     SBBGroup(
-        modifier = Modifier
-            .size(100.dp)
+        modifier =
+            Modifier
+                .size(100.dp),
     ) {
         Box(
-            modifier = Modifier
-                .weight(1.0f)
-                .fillMaxSize()
-                .background(color)
+            modifier =
+                Modifier
+                    .weight(1.0f)
+                    .fillMaxSize()
+                    .background(color),
         )
         Text(
-            modifier = Modifier.padding(
-                start = SBBConst.DEFAULT_HORIZONTAL_PADDING,
-                top = SBBConst.HALF_PADDING,
-                end = SBBConst.DEFAULT_HORIZONTAL_PADDING,
-            ),
+            modifier =
+                Modifier.padding(
+                    start = SBBConst.DEFAULT_HORIZONTAL_PADDING,
+                    top = SBBConst.HALF_PADDING,
+                    end = SBBConst.DEFAULT_HORIZONTAL_PADDING,
+                ),
             text = name,
             style = MaterialTheme.typography.bodyMedium,
         )
         Text(
-            modifier = Modifier.padding(
-                start = SBBConst.DEFAULT_HORIZONTAL_PADDING,
-                end = SBBConst.DEFAULT_HORIZONTAL_PADDING,
-                bottom = SBBConst.HALF_PADDING,
-            ),
+            modifier =
+                Modifier.padding(
+                    start = SBBConst.DEFAULT_HORIZONTAL_PADDING,
+                    end = SBBConst.DEFAULT_HORIZONTAL_PADDING,
+                    bottom = SBBConst.HALF_PADDING,
+                ),
             text = "#${color.toArgb().toHexString(format = HexFormat.UpperCase)}",
             style = MaterialTheme.typography.bodySmall,
         )
     }
-
 }
-
 
 @Preview(showBackground = true)
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
