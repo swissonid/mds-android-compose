@@ -2,13 +2,11 @@ package ch.sbb.compose_mds.beta.button
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -16,7 +14,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import ch.sbb.compose_mds.beta.ExperimentalSBBComponent
-import ch.sbb.compose_mds.theme.SBBColors
 
 @ExperimentalSBBComponent
 @Composable
@@ -34,28 +31,37 @@ fun SBBPrimaryButton(
         enabled = enabled,
         onClick = onClick,
         shape = RoundedCornerShape(22.dp),
-        colors = if (isSystemInDarkTheme()) darkModeColors(pressed) else lightModeColors(pressed),
+        colors = buttonColors(pressed),
         interactionSource = interactionSource,
     ) {
         Text(
             text = label,
-            style = MaterialTheme.typography.bodyMedium,
+            style = SBBTheme.typography.bodyMedium,
         )
     }
 }
 
 @Composable
-private fun lightModeColors(pressed: Boolean): ButtonColors = ButtonDefaults.buttonColors(
-    containerColor = if (pressed) SBBColors.red125 else SBBColors.red,
-    contentColor = SBBColors.white,
-    disabledContainerColor = SBBColors.graphite,
-    disabledContentColor = SBBColors.white
-)
+private fun buttonColors(pressed: Boolean) = if (SBBTheme.isDarkMode) darkModeColors(pressed) else lightModeColors(pressed)
 
 @Composable
-private fun darkModeColors(pressed: Boolean): ButtonColors = ButtonDefaults.buttonColors(
-    containerColor = if (pressed) SBBColors.red125 else SBBColors.red,
-    contentColor = SBBColors.white,
-    disabledContainerColor = SBBColors.iron,
-    disabledContentColor = SBBColors.smoke
-)
+private fun lightModeColors(pressed: Boolean): ButtonColors {
+    val colors = SBBTheme.colors
+    return ButtonDefaults.buttonColors(
+        containerColor = if (pressed) colors.primary125 else colors.primary,
+        contentColor = colors.white,
+        disabledContainerColor = colors.graphite,
+        disabledContentColor = colors.white,
+    )
+}
+
+@Composable
+private fun darkModeColors(pressed: Boolean): ButtonColors {
+    val colors = SBBTheme.colors
+    return ButtonDefaults.buttonColors(
+        containerColor = if (pressed) colors.primary125 else colors.primary,
+        contentColor = colors.white,
+        disabledContainerColor = colors.iron,
+        disabledContentColor = colors.smoke,
+    )
+}

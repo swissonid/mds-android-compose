@@ -1,23 +1,22 @@
+package ch.sbb.compose_mds.theme
+
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
-import androidx.compose.ui.platform.LocalInspectionMode
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
-import ch.sbb.compose_mds.theme.LocalSBBTypography
-import ch.sbb.compose_mds.theme.SBBTypography
 import ch.sbb.compose_mds.theme.context.LocalThemeContext
 import ch.sbb.compose_mds.theme.context.SBBThemeContext
 import ch.sbb.compose_mds.theme.context.ThemeContext
 import ch.sbb.compose_mds.theme.context.colors.ContextAdditionalColors
 import ch.sbb.compose_mds.theme.context.colors.ContextColors
 import ch.sbb.compose_mds.theme.context.colors.ContextFunctionalColors
-import ch.sbb.compose_mds.theme.context.material.colorScheme
+// import ch.sbb.compose_mds.theme.context.material.toColorScheme // This import is no longer needed
 
 internal val LocalSBBIsDarkMode = staticCompositionLocalOf<Boolean> { false }
 
@@ -25,22 +24,29 @@ object SBBTheme {
     val colors: ContextColors
         @ReadOnlyComposable
         @Composable
-        get() = LocalThemeContext.current.colors
+        get() {
+            val themeContext = LocalThemeContext.current
+            val isDark = LocalSBBIsDarkMode.current
+            return themeContext.getColors(isDark)
+        }
 
     val additionalColors: ContextAdditionalColors
         @ReadOnlyComposable
         @Composable
-        get() = LocalThemeContext.current.additionalColors
+        get() {
+            val themeContext = LocalThemeContext.current
+            val isDark = LocalSBBIsDarkMode.current
+            return themeContext.getAdditionalColors(isDark)
+        }
 
     val functionalColors: ContextFunctionalColors
         @ReadOnlyComposable
         @Composable
-        get() = LocalThemeContext.current.functionalColors
-
-    val colorScheme: ColorScheme
-        @ReadOnlyComposable
-        @Composable
-        get() = LocalThemeContext.current.colorScheme(isDarkMode)
+        get() {
+            val themeContext = LocalThemeContext.current
+            val isDark = LocalSBBIsDarkMode.current
+            return themeContext.getFunctionalColors(isDark)
+        }
 
     val typography: Typography
         @ReadOnlyComposable
@@ -63,7 +69,6 @@ fun SBBTheme(
     themeContext: ThemeContext = SBBThemeContext,
     darkTheme: Boolean = isSystemInDarkTheme(),
     fontFamily: FontFamily? = null,
-    includeSurface: Boolean = LocalInspectionMode.current,
     content: @Composable () -> Unit,
 ) {
     CompositionLocalProvider(
@@ -72,9 +77,9 @@ fun SBBTheme(
         LocalSBBTypography provides SBBTypography.default(fontFamily = fontFamily),
     ) {
         MaterialTheme(
-            colorScheme = SBBTheme.colorScheme,
+            colorScheme = themeContext.getMaterialColorScheme(darkTheme), // Corrected call
             typography = SBBTheme.typography,
-            content = { if (includeSurface) Surface { content() } else content() },
+            content = content,
         )
     }
 }
