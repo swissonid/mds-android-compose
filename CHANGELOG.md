@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# 0.1.5
+
+### Features
+* **Context Theming:** Introduced a robust `ThemeContext` mechanism, allowing the design system to provide distinct color schemes and other theme properties based on the active application context (e.g., default, safety-relevant, off-brand).
+* **Screenshot Testing (Roborazzi):** Introduced Roborazzi for automated golden file screenshot testing to prevent visual regressions.
+* **Golden Files:** Enabled Git LFS to manage golden image files and added an initial set of golden files for existing components.
+
+### Refactoring
+* **Color Primitives:** Replaced existing color definitions with `PrimitiveColors.kt` for clearer and more consistent naming, aligning with design system terminology.
+
+### Chore
+* **Golden Files:** Updated golden files to reflect changes introduced by the new context theming.
+
+### Documentation
+* **Golden Files:** Added initial documentation for generating and verifying golden files in `README.md` and a dedicated `doc/wyh-roborazzi.md` explaining the choice of Roborazzi.
+
 # 0.1.4
 
 ### Features
@@ -50,7 +66,7 @@ All notable changes to this project will be documented in this file. See [standa
 [icon-class]: compose-mds/src/main/java/ch/sbb/compose_mds/sbbicons/__SBBIcons.kt
 [checkbox-class]: compose-mds/src/main/java/ch/sbb/compose_mds/composables/checkbox
 [header-class]: compose-mds/src/main/java/ch/sbb/compose_mds/composables/header
-[status-class]: compose-mds/src/main/java/ch/sbb/compose_mds/composables/status
+[status-class]: compose-mds/src/main/java/ch.sbb/compose_mds/composables/status
 [early-stage-package]: compose-mds/src/main/java/ch/sbb/compose_mds/beta
 
 [color-design]: https://www.figma.com/design/5j2eZ2D0sHYFKkRSmFdBPJ/SBB-Colors?node-id=0-1&node-type=canvas&t=RsI5bFCfRWHjjDaX-0
