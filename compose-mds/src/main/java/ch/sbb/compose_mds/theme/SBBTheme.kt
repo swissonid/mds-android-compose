@@ -42,7 +42,18 @@ object SBBTheme {
         @Composable
         get() = LocalThemeContext.current.colorScheme(isDarkMode)
 
+    @Deprecated("Use materialTypography instead", ReplaceWith("SBBTheme.materialTypography"))
     val typography: Typography
+        @ReadOnlyComposable
+        @Composable
+        get() = LocalSBBTypography.current.materialTypography //LocalSBBTypography.current
+
+    val materialTypography: Typography
+        @ReadOnlyComposable
+        @Composable
+        get() = LocalSBBTypography.current.materialTypography
+
+    val sbbTypography: SBBTypography
         @ReadOnlyComposable
         @Composable
         get() = LocalSBBTypography.current
@@ -69,11 +80,11 @@ fun SBBTheme(
     CompositionLocalProvider(
         LocalThemeContext provides themeContext,
         LocalSBBIsDarkMode provides darkTheme,
-        LocalSBBTypography provides SBBTypography.default(fontFamily = fontFamily),
+        LocalSBBTypography provides SBBTypography(fontFamily = fontFamily),
     ) {
         MaterialTheme(
             colorScheme = SBBTheme.colorScheme,
-            typography = SBBTheme.typography,
+            typography = SBBTheme.materialTypography,
             content = { if (includeSurface) Surface { content() } else content() },
         )
     }
